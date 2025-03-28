@@ -484,11 +484,15 @@ Current user – Current host
   : $Home\[My ]Documents\PowerShell\Microsoft.PowerShell_profile.ps1	
   : $profile
 
-3. test-path $profile
-4. New-Item -Path $profile -Type File -Force
+#3. 
+test-path $profile
+#4. 
+New-Item -Path $profile -Type File -Force
 
-5. Set-ExecutionPolicy RemoteSigned
-6. configure your profile -- styling
+#5. 
+Set-ExecutionPolicy RemoteSigned
+#6. 
+configure your profile -- styling
 
 # Style default PowerShell Console
 $shell = $Host.UI.RawUI
@@ -501,11 +505,11 @@ Import-Module posh-git
 Import-Module oh-my-posh
 Set-Theme LazyAdmin
 
-7. relocate to "home"
+#7. relocate to "home"
 # Set Default location
 Set-Location D:\SysAdmin\scripts
 
-8. # Load scripts from the following locations
+#8. # Load scripts from the following locations
 $env:Path += ";D:\SysAdmin\scripts\PowerShellBasics"
 $env:Path += ";D:\SysAdmin\scripts\Connectors"
 $env:Path += ";D:\SysAdmin\scripts\Office365"
